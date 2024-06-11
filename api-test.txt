@@ -1,0 +1,33 @@
+http://localhost:8080/api/v1/persona/listar
+http://localhost:8080/api/v1/persona/search
+body:{
+"id_persona":140
+}
+http://localhost:8080/api/v1/persona/insert
+body:{
+"id_persona":null,
+"apellido_paterno":"Luna",
+"apellido_materno": "Galvez",
+"nombres": "Jorge",
+"fecha_nacimiento":"2008-01-06",
+"id_tipo_documento":1,
+"ndocumento":"25252525",
+"direccion":"Av. La Paz 435, San Miguel",
+"idubigeo":"150136"
+}
+http://localhost:8080/api/v1/persona/update
+body:{
+"id_persona":140,
+"apellido_paterno":"Galvez",
+"apellido_materno": "Galvez",
+"nombres": "Jorge",
+"fecha_nacimiento":"2008-01-06",
+"id_tipo_documento":1,
+"ndocumento":"25252525",
+"direccion":"Av. La Paz 435, San Miguel",
+"idubigeo":"150136"
+}
+http://localhost:8080/api/v1/persona/delete
+body:{
+"id_persona":140
+}

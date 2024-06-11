@@ -1,0 +1,99 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "local-241CC341SpringSigconBackend",
+    "dateExported": "2024-05-30T21:44:35.346Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "11e20901-7eb3-418b-a5ad-e018a81687da",
+            "colId": "c36c732f-63f1-4d64-beb9-40cb6511f163",
+            "containerId": "",
+            "name": "http://localhost:8080/api/v1/persona/listar",
+            "url": "http://localhost:8080/api/v1/persona/listar",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-30T21:11:40.858Z",
+            "modified": "2024-05-30T21:12:21.558Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a5c4169f-2cce-406a-a99a-4a27240a1ca5",
+            "colId": "c36c732f-63f1-4d64-beb9-40cb6511f163",
+            "containerId": "",
+            "name": "http://localhost:8080/api/v1/persona/search",
+            "url": "http://localhost:8080/api/v1/persona/search",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-05-30T21:17:30.037Z",
+            "modified": "2024-05-30T21:34:40.501Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n\"id_persona\":140\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "deb2898b-5280-46b4-87ef-ef56b88b8cd6",
+            "colId": "c36c732f-63f1-4d64-beb9-40cb6511f163",
+            "containerId": "",
+            "name": "http://localhost:8080/api/v1/persona/insert",
+            "url": "http://localhost:8080/api/v1/persona/insert",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-05-30T21:27:25.461Z",
+            "modified": "2024-05-30T21:30:54.292Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"id_persona\":null,\n\"apellido_paterno\":\"Luna\",\n\"apellido_materno\": \"Galvez\",\n\"nombres\": \"Jorge\",\n\"fecha_nacimiento\":\"2008-01-06\",\n\"id_tipo_documento\":1,\n\"ndocumento\":\"25252525\",\n\"direccion\":\"Av. La Paz 435, San Miguel\",\n\"idubigeo\":\"150136\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f06be0ac-f751-42a8-bb8f-0612d3e505bb",
+            "colId": "c36c732f-63f1-4d64-beb9-40cb6511f163",
+            "containerId": "",
+            "name": "http://localhost:8080/api/v1/persona/update",
+            "url": "http://localhost:8080/api/v1/persona/update",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-05-30T21:31:26.446Z",
+            "modified": "2024-05-30T21:32:26.271Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"id_persona\":140,\n\"apellido_paterno\":\"Galvez\",\n\"apellido_materno\": \"Galvez\",\n\"nombres\": \"Jorge\",\n\"fecha_nacimiento\":\"2008-01-06\",\n\"id_tipo_documento\":1,\n\"ndocumento\":\"25252525\",\n\"direccion\":\"Av. La Paz 435, San Miguel\",\n\"idubigeo\":\"150136\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1ca826f8-ee02-480a-97cb-5136c03e3d89",
+            "colId": "c36c732f-63f1-4d64-beb9-40cb6511f163",
+            "containerId": "",
+            "name": "http://localhost:8080/api/v1/persona/delete",
+            "url": "http://localhost:8080/api/v1/persona/delete",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-05-30T21:33:07.071Z",
+            "modified": "2024-05-30T21:34:24.445Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n\"id_persona\":140\r\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
