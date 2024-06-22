@@ -17,5 +17,15 @@ public class TipoDocumento {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id_tipo_documento;
     private String descripcion;
+
+    public TipoDocumento() {
+    }
+
+    
+    public TipoDocumento(Integer id_tipo_documento, String descripcion) {
+        this.id_tipo_documento = id_tipo_documento;
+        this.descripcion = descripcion;
+    }
+    
     
 }

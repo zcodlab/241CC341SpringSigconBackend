@@ -44,19 +44,21 @@ public class PersonaController {
     }
     @RequestMapping(value="/insert", method=RequestMethod.POST, produces=MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Persona> insertPersona(@RequestBody Persona persona){
-        try{
-            personaService.saveOrUpdatePersona(persona);
+        Persona newpersona;
+        try{            
+            newpersona=personaService.saveOrUpdatePersona(persona);
         }catch(Exception e){
             logger.error("Error inesperado", e);
             return new ResponseEntity<>(null,HttpStatus.INTERNAL_SERVER_ERROR);
         }
-        return new ResponseEntity<>(persona,HttpStatus.OK);
+        return new ResponseEntity<>(newpersona,HttpStatus.OK);
     }
     
     @RequestMapping(value="/update", method=RequestMethod.POST, produces=MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Persona> updatePersona(@RequestBody Persona persona){
+        Persona newpersona;
         try{
-            personaService.saveOrUpdatePersona(persona);
+            newpersona=personaService.saveOrUpdatePersona(persona);
         }catch(Exception e){
             logger.error("Error inesperado", e);
             return new ResponseEntity<>(null,HttpStatus.INTERNAL_SERVER_ERROR);

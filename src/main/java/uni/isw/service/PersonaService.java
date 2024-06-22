@@ -19,8 +19,8 @@ public class PersonaService {
         return personaRepository.findById(id);
     }
     
-    public void saveOrUpdatePersona(Persona persona){
-        personaRepository.save(persona);
+    public Persona saveOrUpdatePersona(Persona persona){
+        return personaRepository.save(persona);
     }   
     
     public void deletePersona(Long id){
